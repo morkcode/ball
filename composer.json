@@ -1,0 +1,39 @@
+{
+    "name": "morkcode/ball",
+    "description": "Bootstrap Alpine Livewire Bootstrap Components",
+    "type": "library",
+    "keywords": [ "bootstrap", "alpine", "laravel", "livewire", "components" ],
+    "homepage": "https://github.com/morkcode/ball",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "morkcode",
+            "email": "jorge@constenla.com.ar",
+            "homepage": "https://github.com/morkcode"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^8.0",
+        "livewire/livewire": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "morkcode\\Ball\\": "src"
+        },
+        "files": [
+            "src/Helpers/helpers.php"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "morkcode\\Ball\\BallServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
